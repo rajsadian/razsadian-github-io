@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+.hamburger-line {
+    @apply w-[30px] h-[5px] bg-secondary block my-1 rounded-full;
+}
+
+.hamburger-active>span:nth-child(1) {
+    @apply rotate-45 transition-all duration-700 ease-in-out;
+}
+
+.hamburger-active>span:nth-child(2) {
+    @apply scale-0 transition-all duration-700 ease-in-out;
+}
+
+.hamburger-active>span:nth-child(3) {
+    @apply -rotate-45 transition-all duration-700 ease-in-out;
+}
+
+.navbar-fixed {
+    @apply fixed z-[9999] bg-primary bg-opacity-80 backdrop-blur-sm drop-shadow-lg transition-all duration-200 ease-out;
+}
