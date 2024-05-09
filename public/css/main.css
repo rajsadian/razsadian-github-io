@@ -1230,6 +1230,10 @@ video {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.hover\:ease-out:hover {
+  transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+}
+
 .focus\:border-secondary:focus {
   --tw-border-opacity: 1;
   border-color: rgb(131 197 190 / var(--tw-border-opacity));
